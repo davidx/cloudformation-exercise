@@ -8,7 +8,6 @@
     - mysql-devel
     - mysql-server
 
-
 - name: Start the MySQL service
   sudo: yes
   service:
@@ -22,10 +21,24 @@
     name: root
     host: "{{ item }}"
     password: "{{ mysql_root_password }}"
-    login_user: root
+    login_user: "{{mysql_root_username }}"
     login_password: "{{ mysql_root_password }}"
     check_implicit_admin: yes
     priv: "*.*:ALL,GRANT"
+  with_items:
+    - "{{ ansible_hostname }}"
+    - 127.0.0.1
+    - ::1
+    - localhost
+- name: create wordpress user
+  mysql_user:
+    name: "{{ wp_db_user }}"
+    host: "{{ item }}"
+    password: "{{ wp_db_password }}"
+    login_user:  "{{ wp_db_user }}"
+    login_password: "{{ wp_db_password }}"
+    check_implicit_admin: yes
+    priv: "{{ wp_db_name }}.*:ALL,GRANT"
   with_items:
     - "{{ ansible_hostname }}"
     - 127.0.0.1
