@@ -7,4 +7,4 @@
     wp_db_password: 'changeme'
     wp_db_host: 'localhost'
   roles:
-  - darthwade.wordpress
+    - darthwade.wordpress
