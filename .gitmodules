@@ -4,3 +4,6 @@
 [submodule "ansible/roles/darthwade.ansible-role-wordpress"]
 	path = ansible/roles/darthwade.ansible-role-wordpress
 	url = https://github.com/darthwade/ansible-role-wordpress.git
+[submodule "roles/geerlingguy.ansible-role-mysql"]
+	path = roles/geerlingguy.ansible-role-mysql
+	url = https://github.com/geerlingguy/ansible-role-mysql
