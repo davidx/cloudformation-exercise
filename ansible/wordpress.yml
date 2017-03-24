@@ -7,4 +7,5 @@
     wp_db_password: 'changeme'
     wp_db_host: 'localhost'
   roles:
+    - bootstrap
     - darthwade.ansible-role-wordpress
