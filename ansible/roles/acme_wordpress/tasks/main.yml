@@ -1,6 +1,6 @@
 - unarchive:
     src: wordpress_db.sql.gz
-    dest: /tmp/wordpress_db.sql
+    dest: /tmp
 
 - name: Restore database
   mysql_db:
