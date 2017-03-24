@@ -1,0 +1,6 @@
+[submodule "ansible/darthwade.ansible-role-wordpress"]
+	path = ansible/darthwade.ansible-role-wordpress
+	url = https://github.com/darthwade/ansible-role-wordpress.git
+[submodule "ansible/roles/darthwade.ansible-role-wordpress"]
+	path = ansible/roles/darthwade.ansible-role-wordpress
+	url = https://github.com/darthwade/ansible-role-wordpress.git
