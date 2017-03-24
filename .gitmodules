@@ -1,3 +1,0 @@
-[submodule "ansible/roles/darthwade.ansible-role-wordpress"]
-	path = ansible/roles/darthwade.ansible-role-wordpress
-	url = git@github.com:darthwade/ansible-role-wordpress.git
