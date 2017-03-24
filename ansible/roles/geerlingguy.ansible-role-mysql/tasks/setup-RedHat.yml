@@ -12,4 +12,3 @@
   with_items:
           - "ib_logfile0"
           - "ib_logfile1"
-  when: mysql_installed.stat.exists == false
