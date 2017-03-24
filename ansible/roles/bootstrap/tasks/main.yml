@@ -1,25 +1,18 @@
 - name: Install build tools
-  yum:
-    name: "@Development tools"
-    state: present
+  yum: name="@Development tools"
 
 - name: Install mysql
   yum: name={{ item }}
   with_items:
     - mysql
     - mysql-devel
+    - mysql-server
 
-- name: Install MySQL server
-  apt: name={{ item }} update_cache=yes cache_valid_time=3600 state=present
-  sudo: yes
-  with_items:
-  - python-mysqldb
-  - mysql-server
 
 - name: Start the MySQL service
   sudo: yes
   service:
-    name: mysql
+    name: mysqld
     state: started
     enabled: true
 
@@ -37,4 +30,4 @@
     - "{{ ansible_hostname }}"
     - 127.0.0.1
     - ::1
-    - localhost 
+    - localhost
