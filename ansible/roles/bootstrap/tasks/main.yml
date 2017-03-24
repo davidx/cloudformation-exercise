@@ -6,7 +6,7 @@
   with_items:
     - php
     - php-mysql
-    - MySQL-python
+    - MySQL-python27
 
 - name: Install mysql
   yum: name={{ item }}
