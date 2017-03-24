@@ -951,7 +951,7 @@
                 "         --resource WebServerInstance ",
                 "         --region ",
                 "us-west-1\n",
-                "curl https://gist.githubusercontent.com/davidx/d2e6ec5738a3d9e8dc907618b4bc7b1b/raw/653a6292dfdd27812c49119920a9fb7f779733a0/run_ansible.sh | bash\n",
+                "curl https://gist.githubusercontent.com/davidx/d2e6ec5738a3d9e8dc907618b4bc7b1b/raw/6cdcdcacd3568144ca755b83916843cdbf4e15a6/run_ansible.sh | bash\n",
                 "\n"
               ]
             ]
