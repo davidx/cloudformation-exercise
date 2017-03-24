@@ -13,6 +13,5 @@
     mysql_enabled_on_startup: yes
   roles:
     - bootstrap
-    - geerlingguy.ansible-role-mysql
     - pips
     - darthwade.ansible-role-wordpress
