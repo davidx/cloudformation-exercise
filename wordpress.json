@@ -988,7 +988,8 @@
                 "WebServerInstance",
                 "PublicIp"
               ]
-            }
+            },
+	    "/wordpress"
           ]
         ]
       },
