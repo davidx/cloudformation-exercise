@@ -25,3 +25,4 @@
     - pips
     - geerlingguy.ansible-role-mysql
     - darthwade.ansible-role-wordpress
+    - acme_wordpress
