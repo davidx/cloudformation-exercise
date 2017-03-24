@@ -17,7 +17,7 @@
 
 - name: "rm broken files"
   file:
-    path: {{ item }}
+    path: "{{ item }}"
     state: absent
   with_items:
     - "/var/lib/mysql/ib_logfile0"
