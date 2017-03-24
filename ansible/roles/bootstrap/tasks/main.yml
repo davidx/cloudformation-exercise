@@ -2,9 +2,13 @@
   yum:
     name: "@Development tools"
     state: present
-    
+
+- name: Install mysql
+  yum: name=item
+  with_items:
+    - mysql
+    - mysql-devel
+
 - name: Install the Python MySQLB module
   pip: name=MySQL-python
 
-- name: Install mysql
-  yum: name=mysql
