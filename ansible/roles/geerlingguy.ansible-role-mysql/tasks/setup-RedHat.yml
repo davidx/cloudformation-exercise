@@ -6,3 +6,10 @@
 
 - name: Ensure MySQL Python libraries are installed.
   yum: "name=MySQL-python state=installed enablerepo={{ mysql_enablerepo }}"
+
+- name: Delete innodb log files created by package after initial install.
+  file: path={{ mysql_datadir }}/{{item}} state=absent
+  with_items:
+          - "ib_logfile0"
+          - "ib_logfile1"
+  when: mysql_installed.stat.exists == false
