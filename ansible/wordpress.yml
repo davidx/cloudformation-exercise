@@ -1,18 +1,27 @@
 - hosts: all
   vars:
     wp_version: 4.0
-    wp_install_dir: '/var/sites/awesome_wordpress_site'
+    wp_install_dir: '/var/www/html/wordpress'
     wp_db_name: 'wordpress_db'
     wp_db_user: 'wordpress_user'
-    wp_db_password: ''
+    wp_db_password: 'changeme'
     wp_db_host: 'localhost'
     mysql_root_home: '/root'
     mysql_root_username: 'root'
     mysql_root_password: 'changeme'
     mysql_root_password_update: yes
     mysql_enabled_on_startup: yes
+    mysql_daemon: mysqld
+    mysql_packages:
+      - mysql
+      - mysql-server
+    mysql_syslog_tag: mysql
+    mysql_slow_query_log_file: /var/log/mysql-slow.log
+    mysql_log_error: /var/log/mysql-error.log
+    mysql_pid_file: /var/run/mysqld/mysqld.pid
+    mysql_config_file: /etc/my.cnf
   roles:
     - bootstrap
     - pips
-    - Nainterceptor.ansible-role-wordpress
-
+    - geerlingguy.ansible-role-mysql
+    - darthwade.ansible-role-wordpress

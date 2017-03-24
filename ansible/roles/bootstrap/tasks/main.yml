@@ -1,6 +1,12 @@
 - name: Install build tools
   yum: name="@Development tools"
 
+- name: Install deps
+  yum: name={{ item }}
+  with_items:
+    - php
+    - php-mysql
+
 - name: Install mysql
   yum: name={{ item }}
   with_items:
