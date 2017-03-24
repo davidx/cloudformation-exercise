@@ -797,7 +797,7 @@
       "Type": "AWS::EC2::Instance",
       "DependsOn": "AttachGateway",
       "Metadata": {
-        "Comment": "Install a simple application",
+        "Comment": "Deps",
         "AWS::CloudFormation::Init": {
           "config": {
             "packages": {
@@ -814,22 +814,6 @@
               }
             },
             "files": {
-              "/var/www/html/index.html": {
-                "content": {
-                  "Fn::Join": [
-                    "\n",
-                    [
-                      "<img src=\"",
-                      "https://s3.amazonaws.com/cloudformation-examples-us-east-1",
-                      "/cloudformation_graphic.png\" alt=\"AWS CloudFormation Logo\"/>",
-                      "<h1>Congratulations, you have successfully launched the AWS CloudFormation sample.</h1>"
-                    ]
-                  ]
-                },
-                "mode": "000644",
-                "owner": "root",
-                "group": "root"
-              },
               "/etc/cfn/cfn-hup.conf": {
                 "content": {
                   "Fn::Join": [
