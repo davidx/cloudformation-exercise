@@ -7,15 +7,5 @@
   yum: name={{ item }}
   with_items:
     - mysql
-    - mysql-server
     - mysql-devel
-
-
-- service:
-    name: mysqld
-    enabled: yes
-    state: started
-
-- name: Install the Python MySQLB module
-  pip: name=MySQL-python
 

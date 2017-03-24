@@ -6,6 +6,13 @@
     wp_db_user: 'wordpress_user'
     wp_db_password: 'changeme'
     wp_db_host: 'localhost'
+    mysql_root_home: '/root'
+    mysql_root_username: 'root'
+    mysql_root_password: 'changeme'
+    mysql_root_password_update: yes
+    mysql_enabled_on_startup: yes
   roles:
     - bootstrap
+    - geerlingguy.mysql
+    - pips
     - darthwade.ansible-role-wordpress
