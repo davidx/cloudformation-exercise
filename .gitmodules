@@ -7,3 +7,6 @@
 [submodule "roles/geerlingguy.ansible-role-mysql"]
 	path = roles/geerlingguy.ansible-role-mysql
 	url = https://github.com/geerlingguy/ansible-role-mysql
+[submodule "ansible/roles/geerlingguy.ansible-role-mysql"]
+	path = ansible/roles/geerlingguy.ansible-role-mysql
+	url = https://github.com/geerlingguy/ansible-role-mysql
