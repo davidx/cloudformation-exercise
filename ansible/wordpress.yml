@@ -4,7 +4,7 @@
     wp_install_dir: '/var/sites/awesome_wordpress_site'
     wp_db_name: 'wordpress_db'
     wp_db_user: 'wordpress_user'
-    wp_db_password: 'changeme'
+    wp_db_password: ''
     wp_db_host: 'localhost'
     mysql_root_home: '/root'
     mysql_root_username: 'root'
@@ -14,4 +14,5 @@
   roles:
     - bootstrap
     - pips
-    - darthwade.ansible-role-wordpress
+    - Nainterceptor.ansible-role-wordpress
+

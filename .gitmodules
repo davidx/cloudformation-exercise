@@ -10,3 +10,12 @@
 [submodule "ansible/roles/geerlingguy.ansible-role-mysql"]
 	path = ansible/roles/geerlingguy.ansible-role-mysql
 	url = https://github.com/geerlingguy/ansible-role-mysql
+[submodule "ansible/roles/Nainterceptor.com"]
+	path = ansible/roles/Nainterceptor.com
+	url = https://github.com/Nainterceptor/ansible-role-common.git
+[submodule "ansible/roles/Nainterceptor.common"]
+	path = ansible/roles/Nainterceptor.common
+	url = https://github.com/Nainterceptor/ansible-role-common.git
+[submodule "ansible/roles/Nainterceptor.ansible-role-wordpress"]
+	path = ansible/roles/Nainterceptor.ansible-role-wordpress
+	url = https://github.com/Nainterceptor/ansible-role-wordpress.git
