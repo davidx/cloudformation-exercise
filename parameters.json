@@ -1,0 +1,13 @@
+[ {
+    "ParameterKey": "KeyName",
+    "ParameterValue": "awstest"
+  }, 
+  {
+    "ParameterKey": "InstanceType",
+    "ParameterValue": "t2.small"
+  },
+  {
+    "ParameterKey": "AdminPass",
+    "ParameterValue": "changeme3"
+  }
+]
