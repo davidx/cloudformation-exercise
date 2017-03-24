@@ -1,11 +1,10 @@
-- name: Install the Python MySQLB module
-  pip: name=MySQL-python
-
 - name: Install build tools
   yum:
     name: "@Development tools"
     state: present
-  become: yes
-  
+    
+- name: Install the Python MySQLB module
+  pip: name=MySQL-python
+
 - name: Install mysql
   yum: name=mysql
